@@ -1,6 +1,7 @@
 # Synkronos
 
-TODO: Write a gem description
+    Synkronos is a life-time folder synchronization tool. 
+    It's based on rsync and works only under MacOSX yet.
 
 ## Installation
 
@@ -24,7 +25,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/synkronos/fork )
+1. Fork it ( https://github.com/akhramov/synkronos/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

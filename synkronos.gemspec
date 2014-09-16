@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency 'rb-fsevent', '~> 0.9.4'
-  spec.add_development_dependency 'rsync', '~> 1.0.8'
+  spec.add_development_dependency 'rspec', '~> 3.0.0'
 end

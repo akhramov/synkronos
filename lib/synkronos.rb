@@ -1,5 +1,5 @@
 require "synkronos/version"
-
+require 'synkronos/rsync/rsync'
 module Synkronos
-  # Your code goes here...
+  
 end
