@@ -31,16 +31,16 @@ describe Synkronos::Rsync do
   end
       
   context 'without ssh' do
-    it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync(src + '/', dest)}
+    it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync(src, dest)}
   end
   
   context 'with ssh' do
     context 'to client' do
-      it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync(src + '/', 'localhost:' + dest, true)}
+      it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync(src, 'localhost:' + dest, true)}
     end
 
     context 'from server' do
-      it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync('localhost:' + src + '/', dest, true)}
+      it_behaves_like 'file synchronizator', ->(src, dest) {Synkronos::Rsync.sync('localhost:' + src, dest, true)}
     end
   end
 end
