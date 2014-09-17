@@ -31,9 +31,10 @@ module Synkronos
           exit
         end
       end
-      
-      STDERR.puts "You must provide source and destination path" and exit(1) unless options[:src] or options[:dest]
+
       opt_parser.parse!(args)
+      abort "You must provide source and destination path" unless options[:src] or options[:dest]
+      options[:src] += '/' unless options[:src].end_with?('/')
       options
     end
   end 
