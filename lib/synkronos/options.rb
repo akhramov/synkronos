@@ -1,5 +1,4 @@
 require 'optparse'
-require 'synkronos/version'
 
 module Synkronos
   class OptionsParser
@@ -16,7 +15,7 @@ module Synkronos
         opts.separator ""
         opts.separator "SSH args"
         opts.on("--[no-]ssh", "Whether we use ssh or not") { |v| options[:ssh] = v }
-        opts.on("-p", "--port", "SSH port (defaults to 22)") { |v| options[:port] = v }
+        opts.on("-p", "--port NUMBER", "ssh port NUMBER (defaults to 22)") { |v| options[:port] = v }
         
         
         opts.separator "Common options"
