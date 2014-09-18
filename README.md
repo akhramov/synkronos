@@ -1,6 +1,6 @@
 # Synkronos
 [![Version      ](https://img.shields.io/gem/v/synkronos.svg?style=flat)](https://rubygems.org/gems/synkronos)
-[![Build Status](https://img.shields.io/travis/akhramov/synkronos/master.svg?style=flat)](https://travis-ci.org/akhramov/synkronos.svg)
+[![Build Status](https://img.shields.io/travis/akhramov/synkronos/master.svg?style=flat)](https://travis-ci.org/akhramov/synkronos)
 
     Synkronos is a life-time folder synchronization tool. 
     It's based on rsync and works only under MacOSX yet.
