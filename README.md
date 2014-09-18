@@ -36,5 +36,6 @@ ___
 
         $ synkronos --ssh --src /path/to/src --dest user@host:/path/to/dest
         
-* Tracking changes in remote directory using ssh
+* Tracking changes in remote directory using ssh:
+
         $ synkronos --ssh --src user@host:/path/to/src --dest /path/to/dest
