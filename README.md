@@ -1,12 +1,19 @@
 # Synkronos
+[![Version      ](https://img.shields.io/gem/v/synkronos.svg?style=flat)](https://rubygems.org/gems/synkronos)
+[![Build Status](https://img.shields.io/travis/akhramov/synkronos/master.svg?style=flat)](https://travis-ci.org/akhramov/synkronos.svg)
 
     Synkronos is a life-time folder synchronization tool. 
     It's based on rsync and works only under MacOSX yet.
 
 ## Installation
+___
+Your machine must have a working copy of rsync.
 
+In order to sync through ssh you will need to setup RSA keys.
+
+
+___
 Add this line to your application's Gemfile:
-
 ```ruby
 gem 'synkronos'
 ```
@@ -21,12 +28,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* Syncing local directories:
 
-## Contributing
+        $ synkronos --src /path/to/src --dest /path/to/dest
+___
+* Syncing remote directory using ssh:
 
-1. Fork it ( https://github.com/akhramov/synkronos/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+        $ synkronos --ssh --src /path/to/src --dest user@host:/path/to/dest
+        
+* Tracking changes in remote directory using ssh
+        $ synkronos --ssh --src user@host:/path/to/src --dest /path/to/dest
