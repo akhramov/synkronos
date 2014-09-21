@@ -33,7 +33,6 @@ module Synkronos
 
       opt_parser.parse!(args)
       abort "You must provide source and destination path" unless options[:src] or options[:dest]
-      options[:src] += '/' unless options[:src].end_with?('/')
       options
     end
   end 

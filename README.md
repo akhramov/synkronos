@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/akhramov/synkronos/master.svg?style=flat)](https://travis-ci.org/akhramov/synkronos)
 
     Synkronos is a life-time folder synchronization tool. 
-    It's based on rsync and works only under MacOSX yet.
+    It's based on rsync and works only under MacOSX and Linux platforms yet.
 
 ## Installation
 ___

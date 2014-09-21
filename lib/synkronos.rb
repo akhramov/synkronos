@@ -1,7 +1,7 @@
-require "synkronos/version"
-require 'synkronos/options'
-require 'synkronos/rsync/rsync'
-require 'rb-fsevent'
+require_relative "synkronos/version"
+require_relative 'synkronos/options'
+require_relative 'synkronos/rsync/rsync'
+require_relative 'synkronos/platform_specific/platform_specific'
 
 module Synkronos
   def self.run(args)
@@ -9,10 +9,10 @@ module Synkronos
     rsync_args = [opts[:src], opts[:dest], opts[:ssh], opts[:port]]
     Rsync.sync(*rsync_args)
     
-    fsevent = FSEvent.new
-    fsevent.watch(opts[:src], {latency: 1}) do
+    event = Synk.new
+    event.eye(opts[:src]) do
       Rsync.sync(*rsync_args)
     end
-    fsevent.run
+    event.run
   end
 end
