@@ -15,16 +15,13 @@ In order to sync through ssh you will need to setup RSA keys.
 ___
 Add this line to your application's Gemfile:
 ```ruby
-gem 'synkronos'
+gem 'synkronos', git: 'https://github.com/akhramov/synkronos.git'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install synkronos
 
 ## Usage
 
