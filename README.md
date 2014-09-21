@@ -21,6 +21,10 @@ gem 'synkronos', git: 'https://github.com/akhramov/synkronos.git'
 And then execute:
 
     $ bundle
+    
+Or install it manually
+
+    $ gem install synkronos
 
 
 ## Usage
