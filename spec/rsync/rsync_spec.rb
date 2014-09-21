@@ -3,7 +3,6 @@ require 'spec_helper'
 shared_examples 'file synchronizator' do |actions|
   it 'moves a file from src to dest' do 
     expect(File).not_to exist("#{dest}/file")
-
     actions.call(src, dest)
     expect(File).to exist("#{dest}/file")
     expect(File.read("#{dest}/file")).to include('Under the spreading chestnut tree')
