@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Synchronize your folders with synkronos }
   spec.description   = <<-EOS 
     Synkronos is a life-time folder synchronization tool. 
-    It's based on rsync and works only under MacOSX yet.
+    It's based on rsync and works only under MacOSX and Linux yet.
   EOS
   
   spec.homepage      = "https://github.com/akhramov/synkronos"
