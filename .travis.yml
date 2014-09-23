@@ -5,3 +5,4 @@ rvm:
   - rbx-2
   - ruby-head
   - jruby-head
+script: "rspec -e 'without ssh'" # just don't know how to configure ssh keys on travis. :(
